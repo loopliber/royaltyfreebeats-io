@@ -20,9 +20,9 @@ export default function Home() {
   ];
 
   const pricingPlans = [
-    { name: 'Basic', price: '$30.00', features: ['MP3 License', '1 Music Video', '5,000 Streams'], popular: false },
-    { name: 'Premium', price: '$50.00', features: ['MP3 + WAV License', '1 Music Video', '50,000 Streams', 'Live Performances'], popular: true },
-    { name: 'Unlimited', price: '$100.00', features: ['MP3 + WAV + Stems', 'Unlimited Videos', 'Unlimited Streams', 'Radio Broadcasting'], popular: false },
+    { name: 'Basic', price: '$30.00', features: ['Standard License', '1 Music Video', '5,000 Streams'], popular: false },
+    { name: 'Premium', price: '$50.00', features: ['No Tags License', '1 Music Video', '50,000 Streams', 'Live Performances'], popular: true },
+    { name: 'Unlimited', price: '$100.00', features: ['No Tags + Stems', 'Unlimited Videos', 'Unlimited Streams', 'Radio Broadcasting'], popular: false },
     { name: 'Exclusive', price: 'Contact Us', features: ['Exclusive Rights', 'Beat Removed From Store', 'Direct Collaboration', 'Unlimited Everything'], popular: false }
   ];
 
@@ -291,7 +291,7 @@ export default function Home() {
               
               <div className="border-t border-gray-800 mt-8 pt-8 text-center">
                 <p className="text-gray-500 text-sm">
-                  © 2024 RoyaltyFreeBeats.io. All rights reserved. Professional beats for serious artists.
+                  © 2025 RoyaltyFreeBeats.io. All rights reserved. Professional beats for serious artists.
                 </p>
               </div>
             </div>
