@@ -1,8 +1,6 @@
 import Layout from "./Layout.jsx";
 
 import Home from "./Home";
-import Blog from "./Blog";
-import HowToGetRoyaltyFreeBeats2025 from "./blog/HowToGetRoyaltyFreeBeats2025";
 import Licensing from "./Licensing";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
@@ -10,7 +8,6 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 const PAGES = {
     
     Home: Home,
-    Blog: Blog,
     Licensing: Licensing,
     
 }
@@ -18,11 +15,6 @@ const PAGES = {
 function _getCurrentPage(url) {
     if (url.endsWith('/')) {
         url = url.slice(0, -1);
-    }
-    
-    // Handle blog routes
-    if (url.includes('/blog')) {
-        return 'Blog';
     }
     
     let urlLastPart = url.split('/').pop();
@@ -47,8 +39,6 @@ function PagesContent() {
                 
                 
                 <Route path="/Home" element={<Home />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/how-to-get-royalty-free-beats-in-2025" element={<HowToGetRoyaltyFreeBeats2025 />} />
                 <Route path="/licensing" element={<Licensing />} />
                 
             </Routes>

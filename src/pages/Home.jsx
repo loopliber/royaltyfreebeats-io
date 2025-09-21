@@ -46,7 +46,7 @@ export default function Home() {
                   <div className="text-xl font-bold">RoyaltyFreeBeats.io</div>
                 </div>
                 <div className="hidden md:flex items-center space-x-8">
-                  <a href="/blog" className="hover:text-[#00D4FF] transition-colors">Blog</a>
+                  <a href="#beats" className="hover:text-[#00D4FF] transition-colors">Beats</a>
                   <a href="#about" className="hover:text-[#00D4FF] transition-colors">About</a>
                   <a href="/licensing" className="hover:text-[#00D4FF] transition-colors">Licensing</a>
                   <Button className="bg-[#00D4FF] hover:bg-[#00B8E6] text-black font-semibold">
@@ -271,7 +271,7 @@ export default function Home() {
                 <div>
                   <h4 className="font-semibold mb-4">Quick Links</h4>
                   <div className="space-y-2 text-sm">
-                    <a href="/blog" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Blog</a>
+                    <a href="#beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Browse Beats</a>
                     <a href="#about" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">About Us</a>
                     <a href="#pricing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Pricing</a>
                     <a href="/licensing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Licensing</a>
