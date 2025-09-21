@@ -46,9 +46,9 @@ export default function Home() {
                   <h1 className="text-xl font-bold">RoyaltyFreeBeats.io</h1>
                 </div>
                 <div className="hidden md:flex items-center space-x-8">
-                  <a href="#beats" className="hover:text-[#00D4FF] transition-colors">Beats</a>
+                  <a href="/beats" className="hover:text-[#00D4FF] transition-colors">Beats</a>
                   <a href="#about" className="hover:text-[#00D4FF] transition-colors">About</a>
-                  <a href="#pricing" className="hover:text-[#00D4FF] transition-colors">Pricing</a>
+                  <a href="/licensing" className="hover:text-[#00D4FF] transition-colors">Licensing</a>
                   <Button className="bg-[#00D4FF] hover:bg-[#00B8E6] text-black font-semibold">
                     Browse Library
                   </Button>
@@ -72,8 +72,8 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Professional quality beats ready for your next hit. 
-                  Instant download with commercial license included.
+                  Professional royalty free hip hop beats, trap beats, and drill instrumentals. 
+                  No tag beats licensing with instant download and commercial rights included.
                 </p>
               </div>
 
@@ -271,10 +271,10 @@ export default function Home() {
                 <div>
                   <h4 className="font-semibold mb-4">Quick Links</h4>
                   <div className="space-y-2 text-sm">
-                    <a href="#beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Browse Beats</a>
+                    <a href="/beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Browse Beats</a>
                     <a href="#about" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">About Us</a>
                     <a href="#pricing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Pricing</a>
-                    <a href="#" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Licensing</a>
+                    <a href="/licensing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Licensing</a>
                   </div>
                 </div>
                 

@@ -1,12 +1,16 @@
 import Layout from "./Layout.jsx";
 
 import Home from "./Home";
+import Beats from "./Beats";
+import Licensing from "./Licensing";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
     
     Home: Home,
+    Beats: Beats,
+    Licensing: Licensing,
     
 }
 
@@ -36,6 +40,8 @@ function PagesContent() {
                 
                 
                 <Route path="/Home" element={<Home />} />
+                <Route path="/beats" element={<Beats />} />
+                <Route path="/licensing" element={<Licensing />} />
                 
             </Routes>
         </Layout>
