@@ -19,6 +19,12 @@ function _getCurrentPage(url) {
     if (url.endsWith('/')) {
         url = url.slice(0, -1);
     }
+    
+    // Handle blog routes
+    if (url.includes('/blog')) {
+        return 'Blog';
+    }
+    
     let urlLastPart = url.split('/').pop();
     if (urlLastPart.includes('?')) {
         urlLastPart = urlLastPart.split('?')[0];
