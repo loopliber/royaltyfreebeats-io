@@ -43,10 +43,10 @@ export default function Home() {
               <div className="flex justify-between items-center py-4">
                 <div className="flex items-center space-x-2">
                   <Music className="w-8 h-8 text-[#00D4FF]" />
-                  <h1 className="text-xl font-bold">RoyaltyFreeBeats.io</h1>
+                  <div className="text-xl font-bold">RoyaltyFreeBeats.io</div>
                 </div>
                 <div className="hidden md:flex items-center space-x-8">
-                  <a href="/beats" className="hover:text-[#00D4FF] transition-colors">Beats</a>
+                  <a href="/blog" className="hover:text-[#00D4FF] transition-colors">Blog</a>
                   <a href="#about" className="hover:text-[#00D4FF] transition-colors">About</a>
                   <a href="/licensing" className="hover:text-[#00D4FF] transition-colors">Licensing</a>
                   <Button className="bg-[#00D4FF] hover:bg-[#00B8E6] text-black font-semibold">
@@ -65,10 +65,10 @@ export default function Home() {
                   Premium Beat Store
                 </Badge>
                 <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                  Royalty-Free
+                  Royalty Free Beats
                   <br />
                   <span className="text-transparent bg-gradient-to-r from-[#00D4FF] to-white bg-clip-text">
-                    Hip Hop Beats
+                    Hip Hop, Trap & R&B
                   </span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -271,7 +271,7 @@ export default function Home() {
                 <div>
                   <h4 className="font-semibold mb-4">Quick Links</h4>
                   <div className="space-y-2 text-sm">
-                    <a href="/beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Browse Beats</a>
+                    <a href="/blog" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Blog</a>
                     <a href="#about" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">About Us</a>
                     <a href="#pricing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Pricing</a>
                     <a href="/licensing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Licensing</a>
