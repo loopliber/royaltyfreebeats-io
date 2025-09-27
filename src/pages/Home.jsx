@@ -32,7 +32,7 @@ export default function Home() {
         title="Royalty Free Beats - Premium Hip Hop & Trap Beats | RoyaltyFreeBeats.io"
         description="Discover premium royalty-free beats for hip hop, trap, and more. Instant download, commercial license included. Professional quality beats for artists worldwide."
         keywords="royalty free beats, hip hop beats, trap beats, beats for sale, rap beats, instrumental beats, music licensing, producer beats, commercial license beats"
-        canonicalUrl="https://royaltyfreebeats.io"
+        canonicalUrl="https://royaltyfreebeats.io/"
       />
       {/* Hero Section */}
       <main className="relative">
@@ -41,13 +41,23 @@ export default function Home() {
           <nav className="absolute top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between items-center py-4">
-                <div className="flex items-center space-x-2">
+                <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                   <Music className="w-8 h-8 text-[#00D4FF]" />
                   <div className="text-xl font-bold">RoyaltyFreeBeats.io</div>
-                </div>
+                </a>
                 <div className="hidden md:flex items-center space-x-8">
-                  <a href="#beats" className="hover:text-[#00D4FF] transition-colors">Beats</a>
-                  <a href="#about" className="hover:text-[#00D4FF] transition-colors">About</a>
+                  <div className="relative group">
+                    <a href="#beats" className="hover:text-[#00D4FF] transition-colors cursor-pointer">
+                      Free Beats ▼
+                    </a>
+                    <div className="absolute top-full left-0 mt-2 w-48 bg-black/95 backdrop-blur-md border border-gray-800 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                      <a href="/free-hip-hop-beats" className="block px-4 py-3 text-sm hover:text-[#00D4FF] hover:bg-gray-800/50 transition-colors">Free Hip Hop Beats</a>
+                      <a href="/free-trap-beats" className="block px-4 py-3 text-sm hover:text-[#00D4FF] hover:bg-gray-800/50 transition-colors">Free Trap Beats</a>
+                      <a href="/free-drake-beats" className="block px-4 py-3 text-sm hover:text-[#00D4FF] hover:bg-gray-800/50 transition-colors">Free Drake Beats</a>
+                      <a href="/royalty-free-instrumentals" className="block px-4 py-3 text-sm hover:text-[#00D4FF] hover:bg-gray-800/50 transition-colors rounded-b-lg">Royalty Free Instrumentals</a>
+                    </div>
+                  </div>
+                  <a href="#beats" className="hover:text-[#00D4FF] transition-colors">All Beats</a>
                   <a href="/licensing" className="hover:text-[#00D4FF] transition-colors">Licensing</a>
                   <Button className="bg-[#00D4FF] hover:bg-[#00B8E6] text-black font-semibold">
                     Browse Library
@@ -85,7 +95,12 @@ export default function Home() {
                 <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-800">
                   <div className="mb-6 text-center">
                     <h3 className="text-2xl font-semibold mb-2 text-[#00D4FF]">Featured Beat Collection</h3>
-                    <p className="text-gray-400">Explore our latest hip hop and trap instrumentals</p>
+                    <p className="text-gray-400 mb-4">Explore our latest hip hop and trap instrumentals</p>
+                    <div className="text-sm text-gray-500 max-w-2xl mx-auto">
+                      <p>Professional royalty free beats featuring hip hop, trap, drill, and R&B instrumentals. 
+                      All beats are available with instant download and include commercial licensing options. 
+                      Choose from no tag licensing for clean, professional recordings or basic licensing for budget projects.</p>
+                    </div>
                   </div>
                   
                   <div className="w-full rounded-xl overflow-hidden shadow-2xl">
@@ -253,10 +268,80 @@ export default function Home() {
             </div>
           </section>
 
+          {/* SEO Content Section */}
+          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-950/30">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold mb-6">About RoyaltyFreeBeats.io</h2>
+                <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                  Your premier destination for professional royalty free beats and instrumental music licensing.
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-300">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-[#00D4FF]">Professional Hip Hop Beats</h3>
+                  <p className="leading-relaxed">
+                    Our extensive catalog features professional hip hop beats no tags, perfect for rap artists and vocalists. 
+                    Each instrumental is crafted with modern production techniques and industry-standard quality. 
+                    Whether you need hard-hitting trap beats or smooth R&B instrumentals, our collection has the perfect sound for your project.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-[#00D4FF]">No Tag Beats Licensing</h3>
+                  <p className="leading-relaxed">
+                    Get clean, professional beats without producer tags through our no tag beats licensing options. 
+                    Perfect for serious artists ready to release commercial music, our no tag licensing provides 
+                    radio-ready instrumentals with clear commercial rights. Choose from various licensing tiers 
+                    based on your project needs and distribution goals.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-[#00D4FF]">Instant Download & Commercial Rights</h3>
+                  <p className="leading-relaxed">
+                    All beats for sale online include instant download and commercial licensing rights. 
+                    Stream on Spotify, Apple Music, and all major platforms with confidence. Our transparent 
+                    licensing ensures you know exactly what rights you're getting, from basic licensing for 
+                    independent releases to unlimited licensing for major distribution.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="mt-12 text-center">
+                <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800 max-w-4xl mx-auto">
+                  <h3 className="text-2xl font-semibold mb-4 text-[#00D4FF]">Why Choose Royalty Free Beats?</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">
+                    Royalty free beats offer the perfect solution for independent artists, content creators, and producers 
+                    looking for high-quality instrumentals without ongoing royalty payments. Our professional beat catalog 
+                    includes hip hop, trap, drill, R&B, and pop instrumentals, all available with clear licensing terms 
+                    and instant download. From tagged preview versions to exclusive buyouts, we provide flexible options 
+                    for every budget and project type.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-6 text-left">
+                    <div>
+                      <h4 className="font-semibold mb-2">For Artists & Rappers:</h4>
+                      <p className="text-sm text-gray-400">
+                        Find the perfect beat for your next single, mixtape, or album. No tags licensing available for professional releases.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">For Content Creators:</h4>
+                      <p className="text-sm text-gray-400">
+                        License beats for YouTube videos, podcasts, and social media content with clear commercial rights.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Footer */}
           <footer className="bg-black border-t border-gray-800 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                   <div className="flex items-center space-x-2 mb-4">
                     <Music className="w-6 h-6 text-[#00D4FF]" />
@@ -269,9 +354,19 @@ export default function Home() {
                 </div>
                 
                 <div>
+                  <h4 className="font-semibold mb-4">Free Beats</h4>
+                  <div className="space-y-2 text-sm">
+                    <a href="/free-hip-hop-beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Free Hip Hop Beats</a>
+                    <a href="/free-trap-beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Free Trap Beats</a>
+                    <a href="/free-drake-beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Free Drake Beats</a>
+                    <a href="/royalty-free-instrumentals" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Royalty Free Instrumentals</a>
+                  </div>
+                </div>
+                
+                <div>
                   <h4 className="font-semibold mb-4">Quick Links</h4>
                   <div className="space-y-2 text-sm">
-                    <a href="#beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Browse Beats</a>
+                    <a href="#beats" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Browse All Beats</a>
                     <a href="#about" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">About Us</a>
                     <a href="#pricing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Pricing</a>
                     <a href="/licensing" className="text-gray-400 hover:text-[#00D4FF] transition-colors block">Licensing</a>

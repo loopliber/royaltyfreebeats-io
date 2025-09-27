@@ -1,55 +1,24 @@
-import Layout from "./Layout.jsx";
-
 import Home from "./Home";
 import Licensing from "./Licensing";
+import FreeHipHopBeats from "./FreeHipHopBeats";
+import FreeTrapBeats from "./FreeTrapBeats";
+import FreeDrakeBeats from "./FreeDrakeBeats";
+import RoyaltyFreeInstrumentals from "./RoyaltyFreeInstrumentals";
 
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-
-const PAGES = {
-    
-    Home: Home,
-    Licensing: Licensing,
-    
-}
-
-function _getCurrentPage(url) {
-    if (url.endsWith('/')) {
-        url = url.slice(0, -1);
-    }
-    
-    let urlLastPart = url.split('/').pop();
-    if (urlLastPart.includes('?')) {
-        urlLastPart = urlLastPart.split('?')[0];
-    }
-
-    const pageName = Object.keys(PAGES).find(page => page.toLowerCase() === urlLastPart.toLowerCase());
-    return pageName || Object.keys(PAGES)[0];
-}
-
-// Create a wrapper component that uses useLocation inside the Router context
-function PagesContent() {
-    const location = useLocation();
-    const currentPage = _getCurrentPage(location.pathname);
-    
-    return (
-        <Layout currentPageName={currentPage}>
-            <Routes>            
-                
-                    <Route path="/" element={<Home />} />
-                
-                
-                <Route path="/Home" element={<Home />} />
-                <Route path="/licensing" element={<Licensing />} />
-                
-            </Routes>
-        </Layout>
-    );
-}
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 export default function Pages() {
     return (
         <Router>
-            <PagesContent />
+            <Routes>            
+                <Route path="/" element={<Home />} />
+                <Route path="/licensing" element={<Licensing />} />
+                <Route path="/free-hip-hop-beats" element={<FreeHipHopBeats />} />
+                <Route path="/free-trap-beats" element={<FreeTrapBeats />} />
+                <Route path="/free-drake-beats" element={<FreeDrakeBeats />} />
+                <Route path="/royalty-free-instrumentals" element={<RoyaltyFreeInstrumentals />} />
+                <Route path="*" element={<Home />} />
+            </Routes>
         </Router>
     );
 }
