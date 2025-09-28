@@ -35,6 +35,24 @@ export default function FreeHipHopBeats() {
       />
       {/* Hero Section */}
       <main className="relative">
+        {/* Promotional Banner */}
+        <div className="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white py-4 px-4 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-black/10"></div>
+          <div className="relative z-10 max-w-4xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">🔥</span>
+                <span className="text-lg sm:text-xl font-bold">ALL BEATS ONLY $5 TODAY!</span>
+                <span className="text-2xl">🔥</span>
+              </div>
+              <div className="text-sm sm:text-base font-semibold">
+                <span className="bg-white/20 px-3 py-1 rounded-full mr-2">LIMITED COPIES!</span>
+                <span className="bg-white/20 px-3 py-1 rounded-full animate-pulse">ENDS SOON!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div className={`transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {/* Navigation */}
           <nav className="absolute top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md">
